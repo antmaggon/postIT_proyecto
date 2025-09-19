@@ -1,6 +1,11 @@
+body
+{
+    font-family: Arial, sans-serif;
+}
+
 .title {
     font-weight: bold;
     font-size: 30px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
