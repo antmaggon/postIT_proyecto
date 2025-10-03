@@ -1,6 +1,8 @@
-body
-{
+body {
     font-family: Arial, sans-serif;
+    background: rgb(255, 206, 255);
+    margin: 0;
+    padding: 20px;
 }
 
 .title {
@@ -8,4 +10,55 @@ body
     font-size: 30px;
     text-align: center;
     margin-top: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+#postits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.n {
+    background-color: rgb(255, 255, 198);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+    position: relative;
+    word-wrap: break-word;
+    min-height: 50px;
+}
+
+.n:nth-child(2n) {
+    background-color: #7bff9c;
+}
+
+.n:nth-child(3n) {
+    background-color: #ff5c6c;
+}
+
+.d {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    background: none;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    color: black;
+}
+
+.c {
+    outline: 0;
+    width: 80%;
+    height: 100%;
 }
